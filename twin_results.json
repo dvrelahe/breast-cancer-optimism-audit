@@ -1,0 +1,523 @@
+{
+ "digit_sd": 0.0037719605952448968,
+ "sigma": 0.1201836208828368,
+ "s2_k1": 0.0009950381879639837,
+ "rho": 0.33636363636363636,
+ "p_rho": 0.31182431390038634,
+ "table": [
+  {
+   "protocol": "L1",
+   "key": "locf",
+   "model": "Last observation carried forward",
+   "MdAPE": 61.90476190476188,
+   "RMSLE": 0.6871301428345933,
+   "RMSE": 232.90185213362454,
+   "coverage": 90.9090909090909,
+   "width_ratio": 20.72573158639792,
+   "IS": 3.728619868842517,
+   "CRPS": 0.3928388709448386
+  },
+  {
+   "protocol": "L1",
+   "key": "growth",
+   "model": "Growth only (no treatment effect)",
+   "MdAPE": 75.8802617313444,
+   "RMSLE": 0.7284955271587311,
+   "RMSE": 265.0788150581041,
+   "coverage": 90.9090909090909,
+   "width_ratio": 27.166687970380575,
+   "IS": 4.125279071564953,
+   "CRPS": 0.4215917361310277
+  },
+  {
+   "protocol": "L1",
+   "key": "static",
+   "model": "Lesion-only rate (static k)",
+   "MdAPE": 28.631835032437436,
+   "RMSLE": 0.4937330109318303,
+   "RMSE": 174.5791635822673,
+   "coverage": 90.9090909090909,
+   "width_ratio": 8.334760792417624,
+   "IS": 2.555998657494383,
+   "CRPS": 0.27977024935257805
+  },
+  {
+   "protocol": "L1",
+   "key": "static_drift",
+   "model": "Lesion-only rate + drift",
+   "MdAPE": 27.13426330349727,
+   "RMSLE": 0.44948290084068243,
+   "RMSE": 132.21499200305905,
+   "coverage": 100.0,
+   "width_ratio": 10.204409813987583,
+   "IS": 2.096147636737394,
+   "CRPS": 0.2632919407259004
+  },
+  {
+   "protocol": "L1",
+   "key": "pop",
+   "model": "Population rate, no drift",
+   "MdAPE": 38.536942167573095,
+   "RMSLE": 0.5390949856428301,
+   "RMSE": 146.04323282472447,
+   "coverage": 90.9090909090909,
+   "width_ratio": 8.852744952644198,
+   "IS": 3.842114972980083,
+   "CRPS": 0.3038009769361519
+  },
+  {
+   "protocol": "L1",
+   "key": "pop_drift",
+   "model": "Population rate + drift",
+   "MdAPE": 21.25387405861381,
+   "RMSLE": 0.5267149979856768,
+   "RMSE": 108.03676379643161,
+   "coverage": 90.9090909090909,
+   "width_ratio": 10.783172990452256,
+   "IS": 3.104922977727965,
+   "CRPS": 0.29348336565423794
+  },
+  {
+   "protocol": "L1",
+   "key": "twin_nodrift",
+   "model": "Twin without drift (Kalman only)",
+   "MdAPE": 32.44220228723153,
+   "RMSLE": 0.5092203812239695,
+   "RMSE": 136.67692143681097,
+   "coverage": 90.9090909090909,
+   "width_ratio": 7.758265717517743,
+   "IS": 3.5525369789641887,
+   "CRPS": 0.28144460412707056
+  },
+  {
+   "protocol": "L1",
+   "key": "twin",
+   "model": "Digital twin (Kalman + drift)",
+   "MdAPE": 21.696927075414465,
+   "RMSLE": 0.4657561844579602,
+   "RMSE": 96.9203694284312,
+   "coverage": 90.9090909090909,
+   "width_ratio": 9.559913436773957,
+   "IS": 2.821209916892482,
+   "CRPS": 0.26084062176390294
+  },
+  {
+   "protocol": "L2",
+   "key": "locf",
+   "model": "Last observation carried forward",
+   "MdAPE": 61.90476190476188,
+   "RMSLE": 0.6871301428345933,
+   "RMSE": 232.90185213362454,
+   "coverage": 90.9090909090909,
+   "width_ratio": 15.818097239532802,
+   "IS": 4.060329749667311,
+   "CRPS": 0.3997692534329479
+  },
+  {
+   "protocol": "L2",
+   "key": "growth",
+   "model": "Growth only (no treatment effect)",
+   "MdAPE": 75.8802617313444,
+   "RMSLE": 0.7284955271587311,
+   "RMSE": 265.0788150581041,
+   "coverage": 90.9090909090909,
+   "width_ratio": 18.39638815861617,
+   "IS": 4.293075342836205,
+   "CRPS": 0.4246886844934131
+  },
+  {
+   "protocol": "L2",
+   "key": "static",
+   "model": "Lesion-only rate (static k)",
+   "MdAPE": 28.631835032437436,
+   "RMSLE": 0.4937330109318303,
+   "RMSE": 174.5791635822673,
+   "coverage": 81.81818181818183,
+   "width_ratio": 6.41637342881971,
+   "IS": 3.1694680660885144,
+   "CRPS": 0.2817574933502922
+  },
+  {
+   "protocol": "L2",
+   "key": "static_drift",
+   "model": "Lesion-only rate + drift",
+   "MdAPE": 33.05366400882319,
+   "RMSLE": 0.483952102355344,
+   "RMSE": 134.7572961551951,
+   "coverage": 90.9090909090909,
+   "width_ratio": 7.025747034240717,
+   "IS": 2.0842845401488796,
+   "CRPS": 0.28565376786113394
+  },
+  {
+   "protocol": "L2",
+   "key": "pop",
+   "model": "Population rate, no drift",
+   "MdAPE": 26.865524498252174,
+   "RMSLE": 0.518535487141257,
+   "RMSE": 117.97604795887061,
+   "coverage": 90.9090909090909,
+   "width_ratio": 5.920302272831606,
+   "IS": 3.4494178322538342,
+   "CRPS": 0.29397699265060023
+  },
+  {
+   "protocol": "L2",
+   "key": "pop_drift",
+   "model": "Population rate + drift",
+   "MdAPE": 39.79915101010288,
+   "RMSLE": 0.5041478383753638,
+   "RMSE": 93.7068554035444,
+   "coverage": 90.9090909090909,
+   "width_ratio": 6.5079062171592446,
+   "IS": 2.870600577533751,
+   "CRPS": 0.2909536071937668
+  },
+  {
+   "protocol": "L2",
+   "key": "twin_nodrift",
+   "model": "Twin without drift (Kalman only)",
+   "MdAPE": 30.83080634275122,
+   "RMSLE": 0.4870584499559672,
+   "RMSE": 125.44608356883137,
+   "coverage": 81.81818181818183,
+   "width_ratio": 5.681283323168766,
+   "IS": 3.4518019340157156,
+   "CRPS": 0.2754727697128778
+  },
+  {
+   "protocol": "L2",
+   "key": "twin",
+   "model": "Digital twin (Kalman + drift)",
+   "MdAPE": 31.368786150003437,
+   "RMSLE": 0.4708167783034986,
+   "RMSE": 97.02546282479621,
+   "coverage": 90.9090909090909,
+   "width_ratio": 6.2584658769882235,
+   "IS": 2.5651107687531467,
+   "CRPS": 0.2750259575891339
+  }
+ ],
+ "ladder": [
+  {
+   "rung": "L1",
+   "MdAPE": 21.696927075414465,
+   "CI_lo": 15.048240507496974,
+   "CI_hi": 49.0416044544035,
+   "RMSLE": 0.4657561844579602
+  },
+  {
+   "rung": "L2",
+   "MdAPE": 31.368786150003437,
+   "CI_lo": 11.608020350983073,
+   "CI_hi": 47.52455570249936,
+   "RMSLE": 0.4708167783034986
+  },
+  {
+   "rung": "L3",
+   "MdAPE": 25.213288113537864,
+   "CI_lo": 18.60260912314299,
+   "CI_hi": 44.48187776285894,
+   "RMSLE": 0.4651995608526173
+  },
+  {
+   "rung": "L4",
+   "MdAPE": 25.213288113537864,
+   "CI_lo": 18.60260912314299,
+   "CI_hi": 44.48187776285894,
+   "RMSLE": 0.4651995608526173
+  },
+  {
+   "rung": "L5",
+   "MdAPE": 5.761573962475762,
+   "CI_lo": 2.537158412539333,
+   "CI_hi": 9.721980546586066,
+   "RMSLE": 0.07464180868273688
+  }
+ ],
+ "best_cw": [
+  1,
+  0.5
+ ],
+ "best_variant": "twin",
+ "tau": {
+  "L1": [
+   [
+    0.00028490858551212116,
+    false
+   ],
+   [
+    0.001535485434947648,
+    false
+   ]
+  ],
+  "L2": [
+   [
+    0.0005546486269697255,
+    false
+   ],
+   [
+    0.0007883489793857129,
+    false
+   ],
+   [
+    0.0008583958178422142,
+    false
+   ],
+   [
+    0.0008861776480140889,
+    false
+   ],
+   [
+    0.0009535390070373785,
+    false
+   ],
+   [
+    0.0009581789991507047,
+    false
+   ],
+   [
+    0.0009892230528379855,
+    false
+   ],
+   [
+    0.0010360991275341674,
+    false
+   ],
+   [
+    0.0010919471753059668,
+    false
+   ],
+   [
+    0.0011105247573771927,
+    false
+   ],
+   [
+    0.0011109309373750476,
+    false
+   ]
+  ]
+ },
+ "gain": {
+  "L1": [
+   0.22259408861070118,
+   0.6067856553660272
+  ],
+  "L2": [
+   0.35791014134262455,
+   0.527515301154381
+  ]
+ },
+ "coverage_L1": [
+  10,
+  11,
+  0.5872200830116173,
+  0.9977010277861857
+ ],
+ "mdape_L1_by_patient": {
+  "2": {
+   "lesions": 5,
+   "MdAPE": 17.261247520019356
+  },
+  "3": {
+   "lesions": 6,
+   "MdAPE": 34.63123429683321
+  }
+ },
+ "permutation": {
+  "L1": {
+   "real": 21.696927075414465,
+   "null_median": 34.73226722561801,
+   "p": 0.08309750450218678,
+   "n_perm": 11660
+  },
+  "L2": {
+   "real": 31.368786150003437,
+   "null_median": 35.063207614020385,
+   "p": 0.15007289254780892,
+   "n_perm": 11660
+  }
+ },
+ "wilcoxon": {
+  "L1: twin vs static": 1.0,
+  "L1: twin vs static_drift": 0.7646484375,
+  "L1: twin vs pop_drift": 0.3203125,
+  "L1: twin vs twin_nodrift": 0.953125,
+  "L1: twin vs locf": 0.240234375,
+  "L2: twin vs static": 0.7646484375,
+  "L2: twin vs static_drift": 0.7001953125,
+  "L2: twin vs pop_drift": 1.0,
+  "L2: twin vs twin_nodrift": 0.6376953125,
+  "L2: twin vs locf": 0.1474609375
+ },
+ "simulation": [
+  {
+   "patients": 2,
+   "lesions": 12,
+   "scenario": "null",
+   "permutation_rejection": 3.0,
+   "wilcoxon_rejection": 4.666666666666667
+  },
+  {
+   "patients": 2,
+   "lesions": 12,
+   "scenario": "as_estimated",
+   "permutation_rejection": 7.000000000000001,
+   "wilcoxon_rejection": 13.0
+  },
+  {
+   "patients": 2,
+   "lesions": 12,
+   "scenario": "strong",
+   "permutation_rejection": 12.0,
+   "wilcoxon_rejection": 16.666666666666664
+  },
+  {
+   "patients": 2,
+   "lesions": 12,
+   "scenario": "strong_precise",
+   "permutation_rejection": 51.66666666666667,
+   "wilcoxon_rejection": 38.333333333333336
+  },
+  {
+   "patients": 4,
+   "lesions": 20,
+   "scenario": "null",
+   "permutation_rejection": 2.3333333333333335,
+   "wilcoxon_rejection": 0.33333333333333337
+  },
+  {
+   "patients": 4,
+   "lesions": 20,
+   "scenario": "as_estimated",
+   "permutation_rejection": 7.333333333333333,
+   "wilcoxon_rejection": 8.666666666666668
+  },
+  {
+   "patients": 4,
+   "lesions": 20,
+   "scenario": "strong",
+   "permutation_rejection": 14.000000000000002,
+   "wilcoxon_rejection": 13.333333333333334
+  },
+  {
+   "patients": 4,
+   "lesions": 20,
+   "scenario": "strong_precise",
+   "permutation_rejection": 63.33333333333333,
+   "wilcoxon_rejection": 42.0
+  },
+  {
+   "patients": 10,
+   "lesions": 50,
+   "scenario": "null",
+   "permutation_rejection": 3.3333333333333335,
+   "wilcoxon_rejection": 0.33333333333333337
+  },
+  {
+   "patients": 10,
+   "lesions": 50,
+   "scenario": "as_estimated",
+   "permutation_rejection": 14.666666666666666,
+   "wilcoxon_rejection": 12.666666666666668
+  },
+  {
+   "patients": 10,
+   "lesions": 50,
+   "scenario": "strong",
+   "permutation_rejection": 24.666666666666668,
+   "wilcoxon_rejection": 17.666666666666668
+  },
+  {
+   "patients": 10,
+   "lesions": 50,
+   "scenario": "strong_precise",
+   "permutation_rejection": 97.66666666666667,
+   "wilcoxon_rejection": 75.0
+  },
+  {
+   "patients": 20,
+   "lesions": 100,
+   "scenario": "null",
+   "permutation_rejection": 1.0,
+   "wilcoxon_rejection": 0.0
+  },
+  {
+   "patients": 20,
+   "lesions": 100,
+   "scenario": "as_estimated",
+   "permutation_rejection": 24.333333333333336,
+   "wilcoxon_rejection": 12.333333333333334
+  },
+  {
+   "patients": 20,
+   "lesions": 100,
+   "scenario": "strong",
+   "permutation_rejection": 40.0,
+   "wilcoxon_rejection": 22.333333333333332
+  },
+  {
+   "patients": 20,
+   "lesions": 100,
+   "scenario": "strong_precise",
+   "permutation_rejection": 100.0,
+   "wilcoxon_rejection": 95.66666666666667
+  },
+  {
+   "patients": 40,
+   "lesions": 200,
+   "scenario": "null",
+   "permutation_rejection": 0.33333333333333337,
+   "wilcoxon_rejection": 0.0
+  },
+  {
+   "patients": 40,
+   "lesions": 200,
+   "scenario": "as_estimated",
+   "permutation_rejection": 37.0,
+   "wilcoxon_rejection": 19.0
+  },
+  {
+   "patients": 40,
+   "lesions": 200,
+   "scenario": "strong",
+   "permutation_rejection": 64.66666666666666,
+   "wilcoxon_rejection": 26.0
+  },
+  {
+   "patients": 40,
+   "lesions": 200,
+   "scenario": "strong_precise",
+   "permutation_rejection": 100.0,
+   "wilcoxon_rejection": 99.66666666666667
+  }
+ ],
+ "animal": {
+  "kmax": 0.49349540937450176,
+  "ec50": 0.22536759910584445,
+  "k30": 0.48981578909475443,
+  "ratio": 12.957908665552347
+ },
+ "cross_species": [
+  {
+   "prior_sd": 0.02,
+   "gain": 0.2867305020400825,
+   "MdAPE": 84.56938098867535
+  },
+  {
+   "prior_sd": 0.05,
+   "gain": 0.7152997665688917,
+   "MdAPE": 60.57651287429924
+  },
+  {
+   "prior_sd": 0.1,
+   "gain": 0.9095011612553353,
+   "MdAPE": 41.30415609469221
+  },
+  {
+   "prior_sd": 0.2,
+   "gain": 0.9757278384910464,
+   "MdAPE": 30.883338404868038
+  }
+ ]
+}
